@@ -16,24 +16,37 @@
 title: Manuela Sabatino
 email: mn.sabatino@gmail.com
 description: A italian woman journey where everything is possible .. changing her world .. believe in herself .. becoming a Web developer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:
+url: "http://ManuCiao.github.io"
 twitter_username: MnlSabatino
 github_username:  ManuCiao
 facebook_username: manuciao8
 linkedin_username: mnsabatino
 
-# Analytics and webmaster tools stuff goes here
 google_analytics:
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
 # Build settings
-markdown: kramdown
-theme: minima
+
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+paginate:         5
+paginate_path: "page:num"
+
+github:         https://github.com/ManuCiao
+repo:           https://github.com/ManuCiao/ManuCiao.github.io.git
+
 gems:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
 exclude:
   - Gemfile
   - Gemfile.lock
