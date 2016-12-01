@@ -84,8 +84,7 @@ html {
 }
 .sidebar a:hover {
     color: #5dd9b0;
-    font-size: 1.3em;
-}
+  }
 
 /* About section */
 
@@ -404,8 +403,7 @@ img {
 
 .icons {
     margin: 1em 0 0 0;
-    font-size: larger;
-
+    font-size: 1.3em;
 }
 
 .icons a {
@@ -422,7 +420,6 @@ img {
 }
 .icon:hover {
   color:#5dd9b0;
-  font-size: 1.3em;
 }
 
 .icon:before {
