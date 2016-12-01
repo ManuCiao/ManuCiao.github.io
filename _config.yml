@@ -13,11 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Manuela Sabatino
+title: MS Blog
 email: mn.sabatino@gmail.com
 description: A italian woman journey where everything is possible .. changing her world .. believe in herself .. becoming a Web developer
-baseurl:
+baseurl:"/"
 url: "http://ManuCiao.github.io"
+
+
+name: 'ManuCiao'
+first_name: 'Manuela'
+last_name: 'Sabatino'
 twitter_username: MnlSabatino
 github_username:  ManuCiao
 facebook_username: manuciao8
