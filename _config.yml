@@ -36,7 +36,7 @@ bing_verify:
 # Build settings
 
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
