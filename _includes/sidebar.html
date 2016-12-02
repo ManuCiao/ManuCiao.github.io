@@ -8,9 +8,9 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="/">Home</a>
-      <a class="sidebar-nav-item{% if page.url == "/about.html" %} active{% endif %}" href="/about.html">About me</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}">Portfolio</a>
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}">Contact me</a>
+      <a class="sidebar-nav-item{% if page.url == "/about/" %} active{% endif %}" href="/about/">About me</a>
+      <a class="sidebar-nav-item{% if page.url == "/portfolio/" %} active{% endif %}" href="/portfolio/">Portfolio</a>
+      <a class="sidebar-nav-item{% if page.url == "/contact/" %} active{% endif %}" href="/contact/">Contact me</a>
       <div class="icons">
         <a  href="https://github.com/{{ site.github_username }}" target="blank"><i class="icon fa fa-github"></i></a>
         <a  href="https://www.twitter.com/{{ site.twitter_username }}" target="blank"><i class="icon fa fa-twitter"></i></a>
