@@ -39,13 +39,13 @@ html {
 
 @media (min-width: 48em) {
     html {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 58em) {
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -441,7 +441,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 h1 {
     font-family:'Questrial', Verdana, sans-serif;
     text-align:center;
-    font-size:35px;
+    font-size:25px;
     padding:0;
     margin:0 0 20px 0;
     position:relative;
