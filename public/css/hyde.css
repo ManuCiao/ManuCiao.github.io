@@ -1,38 +1,6 @@
-/*
- *  __                  __
- * /\ \                /\ \
- * \ \ \___   __  __   \_\ \     __
- *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
- *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
- *    \ \_\ \_\/`____ \ \___,_\ \____\
- *     \/_/\/_/`/___/> \/__,_ /\/____/
- *                /\___/
- *                \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/hyde.
- */
-
-
-/*
- * Contents
- *
- * Global resets
- * Sidebar
- * Container
- * Reverse layout
- * Themes
- */
-
-
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
-
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
 html {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
@@ -81,10 +49,14 @@ html {
 
 .sidebar a {
     color: #fff;
+    text-decoration: none;
 }
+
 .sidebar a:hover {
     color: #5dd9b0;
-  }
+    text-decoration: none;
+}
+
 
 /* About section */
 
@@ -92,8 +64,9 @@ html {
     color: #fff;
     margin-top: 0;
     font-family: "Abril Fatface", serif;
-    font-size:2.25rem;
+    font-size: 2.25rem;
 }
+
 
 /* Sidebar nav */
 
@@ -107,7 +80,7 @@ html {
 }
 
 a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .sidebar-nav-item.active {
@@ -201,23 +174,23 @@ img {
     opacity: 1.0;
 }
 
-.image.left {
+.leftImages {
     float: left;
     margin: 0 1.5em 1em 0;
     top: 0.25em;
 }
 
-.image.right {
+.rightImages {
     float: right;
     margin: 0 0 1em 1.5em;
     top: 0.25em;
 }
 
-.image.left, .image.right {
-    max-width: 40%;
+.leftImages, .rightImages {
+    max-width: 45%;
 }
 
-.image.left img, .image.right img {
+.leftImages img, .rightImages img {
     width: 100%;
 }
 
@@ -254,21 +227,21 @@ img {
  */
 
 .content {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
     .content {
-        max-width: 38rem;
-        margin-left: 20rem;
-        margin-right: 2rem;
+        max-width: 48rem;
+        margin-left: 27rem;
+        margin-right: 3rem;
     }
 }
 
 @media (min-width: 64em) {
     .content {
-        margin-left: 22rem;
+        margin-left: 36rem;
         margin-right: 4rem;
     }
 }
@@ -280,7 +253,8 @@ img {
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+
+/*@media (min-width: 48em) {
     .layout-reverse .sidebar {
         left: auto;
         right: 0;
@@ -294,11 +268,44 @@ img {
 @media (min-width: 64em) {
     .layout-reverse .content {
         margin-left: 4rem;
-        margin-right: 22rem;
+        margin-right: 12rem;
     }
+}*/
+
+
+/* Buttons
+*/
+input[type="submit"], input[type="reset"], input[type="button"], .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-
+.button:hover {
+    color: #5dd9b0!important;
+    text-decoration: none;
+    border: solid 3px #5dd9b0;
+}
 /*
  * Themes
  *
@@ -316,8 +323,9 @@ img {
     background-color: #ac4142;
 }
 
-.theme-base-08 .content a, .theme-base-08 .related-posts li a:hover {
+.theme-base-08 .content a, .related-posts li a {
     color: #ac4142;
+    text-decoration: none;
 }
 
 
@@ -417,8 +425,9 @@ img {
     cursor: pointer;
     padding: 0.2em;
 }
+
 .icon:hover {
-  color:#5dd9b0;
+    color: #5dd9b0;
 }
 
 .icon:before {
@@ -429,44 +438,55 @@ img {
     font-weight: normal;
     text-transform: none !important;
 }
+
+
 /* generic */
- body {
+
+body {
     color: #3F3F3F;
-    font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
-    font-size:16px;
+    font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+    font-size: 16px;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 h1 {
-    font-family:'Questrial', Verdana, sans-serif;
-    text-align:center;
-    font-size:25px;
-    padding:0;
-    margin:0 0 20px 0;
-    position:relative;
-    color:#8C8C8C;
+    font-family: 'Questrial', Verdana, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    position: relative;
+    color: #8C8C8C;
 }
+
+
 /** have a nice ampersand **/
- h1:after {
-    font-size:25px;
-    color:#D6CFCB;
-    content:'（ツ）';
-    text-align:center;
-    display:block;
-    width:100%;
-    font-family:'Alice', Verdana, serif;
+
+h1:after {
+    font-size: 25px;
+    color: #D6CFCB;
+    content: '（ツ）';
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: 'Alice', Verdana, serif;
     text-shadow: 0px 1px 0px #fff;
 }
+
+
 /** create the gradient bottom **/
- h1:before {
-    position:absolute;
-    bottom:15px;
-    content:' ';
-    text-align:center;
-    display:block;
-    height:2px;
-    width:100%;
+
+h1:before {
+    position: absolute;
+    bottom: 15px;
+    content: ' ';
+    text-align: center;
+    display: block;
+    height: 2px;
+    width: 100%;
     background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(182, 180, 180, 0.7) 42%, rgba(180, 178, 178, 0) 43%, rgba(168, 166, 166, 0) 50%, rgba(180, 178, 178, 0) 57%, rgba(182, 180, 180, 0.7) 58%, rgba(238, 237, 237, 0.3) 90%, rgba(255, 255, 255, 0) 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(42%, rgba(182, 180, 180, 0.7)), color-stop(43%, rgba(180, 178, 178, 0)), color-stop(50%, rgba(168, 166, 166, 0)), color-stop(57%, rgba(180, 178, 178, 0)), color-stop(58%, rgba(182, 180, 180, 0.7)), color-stop(90%, rgba(238, 237, 237, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
@@ -480,15 +500,18 @@ h1 {
     background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(182, 180, 180, 0.7) 42%, rgba(180, 178, 178, 0) 43%, rgba(168, 166, 166, 0) 50%, rgba(180, 178, 178, 0) 57%, rgba(182, 180, 180, 0.7) 58%, rgba(238, 237, 237, 0.3) 90%, rgba(255, 255, 255, 0) 100%);
     /* W3C */
 }
+
+
 /* Here comes to good stuff : content styling */
- #content {
-    position:relative;
-    margin:50px auto;
+
+#content {
+    position: relative;
+    margin: 50px auto;
     width: 100%;
-    min-height:200px;
-    z-index:100;
-    padding:30px;
-    border:1px solid #383838;
+    min-height: 200px;
+    z-index: 100;
+    padding: 30px;
+    border: 1px solid #383838;
     /* My stipped background */
     background: #D1D1D1;
     /* Old browsers */
@@ -501,151 +524,186 @@ h1 {
     background: repeating-linear-gradient(-45deg, #887869, #887869 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px, #F2F2F2 70px, #F2F2F2 80px);
     /* FF3.6+ */
     /*border-radius*/
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
     /*box-shadow*/
-    -webkit-box-shadow:0px 1px 6px #3F3F3F;
-    -moz-box-shadow:0px 1px 6px #3F3F3F;
-    box-shadow:0px 1px 6px #3F3F3F;
+    -webkit-box-shadow: 0px 1px 6px #3F3F3F;
+    -moz-box-shadow: 0px 1px 6px #3F3F3F;
+    box-shadow: 0px 1px 6px #3F3F3F;
 }
+
+
 /** my "fake" background that will hover the stripes **/
- #content:after {
-    background:#F9F9F9;
-    margin:10px;
+
+#content:after {
+    background: #F9F9F9;
+    margin: 10px;
     position: absolute;
-    content :" ";
+    content: " ";
     bottom: 0;
     left: 0;
     right: 0;
     top: 0;
     z-index: -1;
-    border:1px #E5E5E5 solid;
+    border: 1px #E5E5E5 solid;
     /*border-radius*/
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
+
+
 /*** form styling **/
 
+
 /** we remove the red glow around required fields since we are already using the red star */
- input:required, textarea:required {
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-    -o-box-shadow:none;
-    box-shadow:none;
+
+input:required, textarea:required {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
 }
+
+
 /** inputs and textarea**/
- input:not([type="submit"]), textarea {
-    outline:none;
-    display:block;
-    width:100%;
-    padding:4px 8px;
-    border:1px dashed #DBDBDB;
-    color:#3F3F3F;
-    font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
-    font-size:14px;
+
+input:not([type="submit"]), textarea {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px dashed #DBDBDB;
+    color: #3F3F3F;
+    font-family: 'Droid Sans', Tahoma, Arial, Verdana sans-serif;
+    font-size: 14px;
     /*border-radius*/
-    -webkit-border-radius:2px;
-    -moz-border-radius:2px;
-    border-radius:2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     /*transition*/
-    -webkit-transition:background 0.2s linear, box-shadow 0.6s linear;
-    -moz-transition:background 0.2s linear, box-shadow 0.6s linear;
-    -o-transition:background 0.2s linear, box-shadow 0.6s linear;
-    transition:background 0.2s linear, box-shadow 0.6s linear;
+    -webkit-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -moz-transition: background 0.2s linear, box-shadow 0.6s linear;
+    -o-transition: background 0.2s linear, box-shadow 0.6s linear;
+    transition: background 0.2s linear, box-shadow 0.6s linear;
 }
+
 input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
-    background:#F7F7F7;
-    border:dashed 1px #969696;
+    background: #F7F7F7;
+    border: dashed 1px #969696;
     /*box-shadow*/
-    -webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
-    -moz-box-shadow:2px 2px 7px #E8E8E8 inset;
-    box-shadow:2px 2px 7px #E8E8E8 inset;
+    -webkit-box-shadow: 2px 2px 7px #E8E8E8 inset;
+    -moz-box-shadow: 2px 2px 7px #E8E8E8 inset;
+    box-shadow: 2px 2px 7px #E8E8E8 inset;
 }
+
 input:not([type="submit"]) {
     height: 30px;
 }
+
+
 /* placeholder */
- ::-webkit-input-placeholder {
-    color:#BABABA;
-    font-style:italic;
+
+::-webkit-input-placeholder {
+    color: #BABABA;
+    font-style: italic;
 }
+
 input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#BABABA;
-    font-style:italic;
+    color: #BABABA;
+    font-style: italic;
 }
+
 textarea {
-    min-height:150px;
-    resize:vertical
+    min-height: 150px;
+    resize: vertical
 }
+
+
 /** labels**/
 
+
 /** adding our icon font !! */
- .iconic:before {
-    font-size:25px;
-    font-family:'Alice', Verdana, serif;
+
+.iconic:before {
+    font-size: 25px;
+    font-family: 'Alice', Verdana, serif;
 }
+
 .iconic.link:before {
-    content:'/';
+    content: '/';
 }
+
 .iconic.quote-alt:before {
-    content:"'";
+    content: "'";
 }
+
 .iconic.comment:before {
-    content:"q";
+    content: "q";
 }
+
 .iconic.user:before {
-    content:"u";
+    content: "u";
 }
+
 .iconic.mail-alt:before {
-    content:"M";
+    content: "M";
 }
+
 label {
-    color:#7F7E7E;
+    color: #7F7E7E;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
+
 label:hover {
-    color:#191919;
+    color: #191919;
 }
+
 label:before {
-    color:#C1BFBD;
+    color: #C1BFBD;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
+
 label:hover:before {
-    color:#969696;
+    color: #969696;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
+
 p {
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
+
 .indication {
-    color:#878787;
-    font-size:12px;
-    font-style:italic;
-    text-align:right;
-    padding-right:10px;
+    color: #878787;
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
 }
+
 .required {
-    color:#E5224C;
+    color: #E5224C;
 }
+
+
 /** Styling the send button **/
- input[type=submit] {
+
+input[type=submit] {
     width: 100%;
-    cursor:pointer;
-    background:none;
-    border:none;
-    font-family:'Alice', serif;
-    color:#767676;
-    font-size:18px;
-    padding:10px 4px;
-    border:1px solid #E0E0E0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Alice', serif;
+    color: #767676;
+    font-size: 18px;
+    border: 1px solid #E0E0E0;
     text-shadow: 0px 1px 1px #E8E8E8;
     background: rgb(247, 247, 247);
     background: -moz-linear-gradient(top, rgba(247, 247, 247, 1) 1%, rgba(242, 242, 242, 1) 100%);
@@ -655,21 +713,22 @@ p {
     background: -ms-linear-gradient(top, rgba(247, 247, 247, 1) 1%, rgba(242, 242, 242, 1) 100%);
     background: linear-gradient(top, rgba(247, 247, 247, 1) 1%, rgba(242, 242, 242, 1) 100%);
     /*border-radius*/
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     /*box-shadow*/
-    -webkit-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    -moz-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
+    -webkit-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
+    -moz-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
+    box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
     /*transition*/
-    -webkit-transition:all 0.2s linear;
-    -moz-transition:all 0.2s linear;
-    -o-transition:all 0.2s linear;
-    transition:all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
+
 input[type=submit]:hover {
-    color:#686868;
+    color: #686868;
     border-color: #CECECE;
     background: rgb(244, 244, 244);
     background: -moz-linear-gradient(top, rgba(244, 244, 244, 1) 0%, rgba(242, 242, 242, 1) 100%);
@@ -679,14 +738,15 @@ input[type=submit]:hover {
     background: -ms-linear-gradient(top, rgba(244, 244, 244, 1) 0%, rgba(242, 242, 242, 1) 100%);
     background: linear-gradient(top, rgba(244, 244, 244, 1) 0%, rgba(242, 242, 242, 1) 100%);
     /*box-shadow*/
-    -webkit-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    -moz-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    -webkit-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    -moz-box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    box-shadow: 0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
 }
+
 input[type=submit]:active, input[type=submit]:focus {
-    position:relative;
-    top:1px;
-    color:#515151;
+    position: relative;
+    top: 1px;
+    color: #515151;
     background: rgb(234, 234, 234);
     background: -moz-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(242, 242, 242, 1) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(234, 234, 234, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
@@ -695,7 +755,29 @@ input[type=submit]:active, input[type=submit]:focus {
     background: -ms-linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(242, 242, 242, 1) 100%);
     background: linear-gradient(top, rgba(234, 234, 234, 1) 0%, rgba(242, 242, 242, 1) 100%);
     /*box-shadow*/
-    -webkit-box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    -moz-box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
-    box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    -webkit-box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    -moz-box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+    box-shadow: 0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
+}
+
+
+/* Work Item */
+
+.work-item {
+    margin: 0 0 2em 0;
+}
+
+.work-item .image {
+    margin: 0 0 1.5em 0;
+}
+
+.work-item h3 {
+    font-size: 1em;
+    margin: 0 0 0.5em 0;
+}
+
+.work-item p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 0;
 }
