@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: MS Blog
 email: mn.sabatino@gmail.com
-description: A italian woman journey where everything is possible .. changing her world .. believe in herself .. becoming a Web developer
+description: Learning how to code for fun. Where everything is possible... 
 baseurl: "/"
 url: "localhost:4000"
 
