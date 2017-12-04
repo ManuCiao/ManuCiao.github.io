@@ -25,9 +25,17 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+	<a class="sidebar-nav-item{% if page.url == "/about/" %} active{% endif %}" href="/about/">About me</a>
+	<a class="sidebar-nav-item{% if page.url == "/portfolio/" %} active{% endif %}" href="/portfolio/">Portfolio</a>
+	<a class="sidebar-nav-item{% if page.url == "/contact/" %} active{% endif %}" href="/contact/">Contact me</a>
+	<div class="icons">
+		<a  href="https://github.com/{{ site.github_username }}" target="blank"><i class="icon fa fa-github"></i></a>
+		<a  href="https://www.twitter.com/{{ site.twitter_username }}" target="blank"><i class="icon fa fa-twitter"></i></a>
+		<a  href="https://www.facebook.com/{{ site.facebook_username }}" target="blank"><i class="icon fa fa-facebook"></i></a>
+		<a  href="mailto:{{ site.email }}"><i class="icon fa fa-envelope-o"></i></a>
+		<a  href="{{ site.url}}/feed.xml" target="blank"><i class="icon fa fa-rss"></i></a>
+   </div>
+	
   </nav>
 
   <div class="sidebar-item">
