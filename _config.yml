@@ -37,10 +37,11 @@ paginate_path:     "page:num"
 github:            https://github.com/ManuCiao
 repo:              https://github.com/ManuCiao/ManuCiao.github.io.git
 
-gems:
-- jekyll-feed
-- jekyll-paginate
-- jekyll-gist
+plugins:
+    - jekyll-feed
+    - jekyll-paginate
+    - jekyll-gist
+
 exclude:
 - Gemfile
 - Gemfile.lock

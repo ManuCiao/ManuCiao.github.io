@@ -1,6 +1,6 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
@@ -10,7 +10,7 @@
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
-
+	
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -25,9 +25,6 @@
       {% endif %}
     {% endfor %}
 
-	<a class="sidebar-nav-item{% if page.url == "/about/" %} active{% endif %}" href="/about/">About me</a>
-	<a class="sidebar-nav-item{% if page.url == "/portfolio/" %} active{% endif %}" href="/portfolio/">Portfolio</a>
-	<a class="sidebar-nav-item{% if page.url == "/contact/" %} active{% endif %}" href="/contact/">Contact me</a>
 	<div class="icons">
 		<a  href="https://github.com/{{ site.github_username }}" target="blank"><i class="icon fa fa-github"></i></a>
 		<a  href="https://www.twitter.com/{{ site.twitter_username }}" target="blank"><i class="icon fa fa-twitter"></i></a>
