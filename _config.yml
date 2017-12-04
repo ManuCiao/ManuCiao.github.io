@@ -1,57 +1,24 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: MS Blog
-email: mn.sabatino@gmail.com
-description: A italian woman journey where everything is possible .. changing her world .. believe in herself .. becoming a Web developer
-baseurl: "/"
-url: "localhost:4000"
-
-
-name: 'ManuCiao'
-first_name: 'Manuela'
-last_name: 'Sabatino'
-twitter_username: MnlSabatino
-github_username:  ManuCiao
-facebook_username: manuciao8
-linkedin_username: mnsabatino
-
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Build settings
-
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
+markdown:         redcarpet
+pygments:         true
 
 # Permalinks
 permalink:        pretty
 
+# Setup
+title:            Lanyon
+tagline:          'A Jekyll theme'
+description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://lanyon.getpoole.com
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
 paginate:         5
-paginate_path: "page:num"
 
-github:         https://github.com/ManuCiao
-repo:           https://github.com/ManuCiao/ManuCiao.github.io.git
+# Custom vars
+version:          2.0.0
 
-gems:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-gist
-exclude:
-  - Gemfile
-  - Gemfile.lock
+github:
+  repo:           https://github.com/poole/lanyon
