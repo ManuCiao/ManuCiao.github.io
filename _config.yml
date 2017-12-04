@@ -27,7 +27,6 @@ version:           2.0.0
 # Dependencies
 markdown:          redcarpet
 highlighter:       rouge
-pygments:          true
 
 # Permalinks
 permalink:         pretty
